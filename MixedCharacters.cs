@@ -8,7 +8,9 @@ namespace Homework5
 {
     class MixedCharacters
     {
- 
+        //Джо Халдон. *Для двух строк написать метод, определяющий, является ли одна строка перестановкой другой.
+        //Например: badc является перестановкой abcd.
+
        static bool MixedChars(string line1, string line2)
         {
             bool isMixed = false;
@@ -19,7 +21,8 @@ namespace Homework5
 
             else {
 
- //Определяем совпадает ли численное значение символов в строке, для начала перегоним их в массив символов
+                #region compare value
+                //Определяем совпадает ли численное значение символов в строке, для начала перегоним их в массив символов
                 char[] arr1 = line1.ToCharArray();
                 char[] arr2 = line2.ToCharArray();
                 int sum1 = 0;
@@ -46,8 +49,10 @@ namespace Homework5
                 {
                     sum2 += arr2[i];
                 }
+                #endregion
 
-//Если суммы равны, значит в строку входят одинаковые символы
+                #region compare order
+                //Если суммы равны, значит в строку входят одинаковые символы
                 if (sum1 == sum2)
                 {
 //Проверяем, что порядок символов в строке не совпадает, если он одинаковый, то строки не являются перестановкой - они одинаковые
@@ -59,12 +64,14 @@ namespace Homework5
                     }
                     return isMixed;
                 }
-                else return isMixed;
+               else return isMixed;
+                #endregion 
             }
-           
         }
         static void Main (string [] args)
         {
+            Console.WriteLine("Джо Халдон. Для двух строк написать метод, определяющий, является ли одна строка перестановкой другой.");
+            Console.WriteLine("========================================");
             Console.WriteLine("Enter a line");
 
             string line1 = Console.ReadLine();
@@ -73,6 +80,7 @@ namespace Homework5
             string line2 = Console.ReadLine();
 
             bool isMixed = MixedChars(line1, line2);
+
             if (isMixed) Console.WriteLine("Line2 is a mixed up line1!");
             else Console.WriteLine("Line2 is NOT a mixed up line1!");
 

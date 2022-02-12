@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace Homework5
 {
+    //Джо Халдон.
+    //Создать метод, который производит частотный анализ текста.
+    //В качестве параметра в него передается массив слов и текст,
+    //в качестве результата метод возвращает сколько раз каждое из слов массива входит в этот текст.
+    //Здесь требуется использовать класс Dictionary.
+
     class WordsCounter
     {
         static void analyseWords(string [] words, string text)
@@ -36,6 +42,13 @@ namespace Homework5
         }
         static void Main(string[] args)
         {
+
+            Console.WriteLine("Джо Халдон. Создать метод, который производит частотный анализ текста.\n" +
+                " В качестве параметра в него передается массив слов и текст,\n" +
+                " в качестве результата метод возвращает сколько раз каждое из слов массива входит в этот текст.\n" +
+                " Здесь требуется использовать класс Dictionary.");
+            Console.WriteLine("==========================================================================");
+
             Console.WriteLine("Enter a text:");
             string text = Console.ReadLine();
             Console.WriteLine("Enter the words you want to search for. Use , to split the words.");
