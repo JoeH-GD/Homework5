@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Homework5.MixedCharacters</StartupObject>
+    <StartupObject>Homework5.WordsCounter</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

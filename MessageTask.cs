@@ -7,6 +7,12 @@ using System.Threading.Tasks;
 
 namespace Homework5
 {
+    //Джо Халдон. Разработать статический класс Message, содержащий следующие статические методы для обработки текста:
+    //а) Вывести только те слова сообщения,  которые содержат не более n букв.
+    //б) Удалить из сообщения все слова, которые заканчиваются на заданный символ.
+    //в) Найти самое длинное слово сообщения.
+    //г) Сформировать строку с помощью StringBuilder из самых длинных слов сообщения.
+
    public static class Message
     {
         private static string[] separators = { ",", ".", "!", "?", ";", ":", " " };
@@ -62,6 +68,7 @@ namespace Homework5
             Console.WriteLine($"The longest word is {longestWord}");
         }
 
+//Я считаю, что это можно было бы следлать лучше, но не могу придумать как
         public static void LongestWordsMessage(string message)
         {
             string[] words = message.Split(separators, StringSplitOptions.RemoveEmptyEntries);
